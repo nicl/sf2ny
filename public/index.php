@@ -6,7 +6,7 @@ $app = new Silex\Application();
 
 // homepage
 $app->get('/', function () use ($app) {
-    return 'Hello ' . $app->escape($name);
+    return 'homepage';
 });
 
 // who we are
