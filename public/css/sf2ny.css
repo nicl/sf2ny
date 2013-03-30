@@ -1,5 +1,5 @@
  /* CUSTOMIZE THE NAVBAR
- -------------------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
  /* Special class on .container surrounding .navbar, used for positioning it into place. */
  .navbar-wrapper {
@@ -38,4 +38,28 @@
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
     margin-top: 10px;
+}
+
+ /* ELEMENTS
+ ---------------------------------------------------------------------------- */
+
+ .image-large {
+    margin: 0 0 10px;
+ }
+
+  /* IFRAMES
+ ---------------------------------------------------------------------------- */
+
+ .iframe-wrapper  {
+    position: relative;
+    padding-bottom: 26%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
