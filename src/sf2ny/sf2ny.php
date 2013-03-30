@@ -29,7 +29,7 @@ $app->get('/charities', function () use ($app) {
 
 // sponsor us
 $app->get('/sponsor-us', function () use ($app) {
-    return 'sponsor us page';
+    return $app['twig']->render('sponsor-us.twig');
 });
 
 return $app;
