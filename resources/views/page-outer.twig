@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>sf2ny 2013</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/css/sf2ny.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">sf2ny</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/who-we-are">Who we are</a></li>
+              <li><a href="/route">Route</a></li>
+              <li><a href="/charities">Charities</a></li>
+              <li><a href="/sponsor-us">Sponsor us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+      <p>Site content &copy; 2013 <a href="http://room271.net">room271</a></p>
+
+    </footer>
+
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+</body>
+</html>
