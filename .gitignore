@@ -1,3 +1,7 @@
 # composer
 vendor
 composer.lock
+
+# config
+dev.json
+prod.json

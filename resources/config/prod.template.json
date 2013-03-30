@@ -1,0 +1,10 @@
+{
+    "debug": true,
+    "db.options": {
+        "driver"   : "pdo_mysql",
+        "host"     : "localhost",
+        "dbname"   : "[db.name]",
+        "user"     : "[db.user]",
+        "password" : "[db.pwd]"
+    },
+}

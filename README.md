@@ -13,10 +13,9 @@ Twitter Bootstrap is used heavily for the visual styling.
 Todo
 ----
 
-/* setup for virtual hosts (local)
-* setup for db with connection
-* add config
+* /setup for virtual hosts (local)
+* /setup for db with connection + setup config
 * add simple html template for all routes
-* add content for main pages (except blogs)
+* add basic routes/content (except blogs)
 * theming for homepage
 * blogging functionality
