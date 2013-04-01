@@ -54,6 +54,10 @@ body {
     background-repeat: no-repeat;
 }
 
+section h1 {
+  font-size: 31.5px;
+}
+
   /* IFRAMES
  ---------------------------------------------------------------------------- */
 
@@ -83,13 +87,13 @@ body {
 
 .splash {
     width: 100%;
-    height: 550px;
+    height: 450px;
     overflow: hidden;
     position: relative;
 }
 
  .splash-caption {
-    margin-top: 435px;
+    margin-top: 335px;
     max-width: 100%;
     padding: 20px;
     position: static;
