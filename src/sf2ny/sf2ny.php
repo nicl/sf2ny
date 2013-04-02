@@ -27,9 +27,4 @@ $app->get('/charities', function () use ($app) {
     return $app['twig']->render('charities.twig');
 });
 
-// sponsor us
-$app->get('/sponsor-us', function () use ($app) {
-    return $app['twig']->render('sponsor-us.twig');
-});
-
 return $app;

@@ -139,3 +139,10 @@ ul#countdown  p.timeRef {
     text-align: center;
     font-weight: normal;
 }
+
+  /* SPONSOR BUTTON
+ ---------------------------------------------------------------------------- */
+
+ .button-sponsor {
+    text-align: center;
+ }
