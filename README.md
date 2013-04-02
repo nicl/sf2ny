@@ -16,6 +16,7 @@ Todo
 * /setup for virtual hosts (local)
 * /setup for db with connection + setup config
 * /add simple html template for all routes
-* add basic routes/content (except blogs)
-* theming for homepage
+* /add basic routes/content (except blogs)
+* /theming for homepage
+* google analytics
 * blogging functionality
