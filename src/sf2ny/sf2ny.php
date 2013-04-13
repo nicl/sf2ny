@@ -1,5 +1,7 @@
 <?php
 
+use Symfony\Component\HttpFoundation\Request;
+
 $app = require __DIR__ . '/bootstrap.php';
 
 // homepage
@@ -8,8 +10,8 @@ $app->get('/', function () use ($app) {
 });
 
 // who we are
-$app->get('/who-we-are', function () use ($app) {
-    return $app['twig']->render('who-we-are.twig');
+$app->get('/who-are-we', function () use ($app) {
+    return $app['twig']->render('who-are-we.twig');
 });
 
 // why are we doing it?
@@ -25,6 +27,16 @@ $app->get('/route', function () use ($app) {
 // charities
 $app->get('/charities', function () use ($app) {
     return $app['twig']->render('charities.twig');
+});
+
+// login
+$app->get('/login', function (Request $request) use ($app) {
+    $vars = array(
+        'error'         => $app['security.last_error']($request),
+        'last_username' => $app['session']->get('_security.last_username'),
+        );
+
+    return $app['twig']->render('login.twig', $vars);
 });
 
 return $app;

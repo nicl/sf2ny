@@ -1,45 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'html.twig' %}
 
-<head>
-  <meta charset="utf-8" />
-  <title>sf2ny 2013</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/bootstrap.css" rel="stylesheet">
-  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="/css/sf2ny.css" rel="stylesheet">
-</head>
+{% block body %}
 
-<body>
+<header>
 
-  <header>
-
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="/">sf2ny</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/who-we-are">Who we are</a></li>
-                <li><a href="/why-are-we-doing-it">Why are we doing it?</a></li>
-                <li><a href="/charities">Charities</a></li>
-                <li><a href="/route">Route</a></li>
-                <li><a href="http://uk.virginmoneygiving.com/sf2ny" target="_blank">Sponsor us!</a></li>
-              </ul>
-            </div>
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-link brand" href="/">sf2ny</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/who-are-we">Who are we</a></li>
+              <li><a href="/why-are-we-doing-it">Why are we doing it?</a></li>
+              <li><a href="/charities">Charities</a></li>
+              <li><a href="/route">Route</a></li>
+              <li><a href="http://uk.virginmoneygiving.com/sf2ny" target="_blank">Sponsor us!</a></li>
+            </ul>
           </div>
+          {% if app.user and is_granted("ROLE_ADMIN") %}
+          <a class=" navbar-link pull-right" href="{{ path('logout') }}">Logout</a>
+          {% endif %}
         </div>
       </div>
     </div>
+  </div>
 
   <div class="splash">
+
+    <img class="splash-image" src="/img/col-du-galibier.jpg">
 
     <div class="container">
       <div class="splash-caption">
@@ -50,27 +44,26 @@
 
   </div>
 
-  </header>
+</header>
 
-  <div class="container">
-    {% block content %}
-    {% endblock %}
+<div class="container">
+  {% block content %}
+  {% endblock %}
 
-    <hr>
+  <hr>
 
-    <footer>
+  <footer>
 
-      <p class="pull-right"><a href="#">Back to top</a></p>
+    <p class="pull-right"><a href="#">Back to top</a></p>
 
-      <p>Site built by <a href="http://room271.net">room271</a></p>
+    <p>Site built by <a href="http://room271.net">room271</a></p>
 
-    </footer>
+  </footer>
 
-  </div>
+</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script src="/js/bootstrap.js"></script>
-    <script src="/js/sf2ny.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/sf2ny.js"></script>
 
-</body>
-</html>
+{% endblock %}
