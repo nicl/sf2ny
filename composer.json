@@ -5,6 +5,12 @@
         "twig/twig": ">=1.8,<2.0-dev",
         "symfony/twig-bridge": "~2.1",
         "symfony/security": "~2.1",
-        "symfony/form": "~2.1.4"
+        "symfony/form": "~2.1.4",
+        "doctrine/dbal": "2.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "sf2ny": "src/"
+        }
     }
 }

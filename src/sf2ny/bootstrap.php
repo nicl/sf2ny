@@ -2,7 +2,7 @@
 
 $app = new Silex\Application();
 
-$env = getenv('APP_ENV') ?: 'prod';
+$env = getenv('APP_ENV') ?: 'dev';
 $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . "/../../resources/config/$env.json"));
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
@@ -24,6 +24,10 @@ $app['security.firewalls'] = array(
         ),
     ),
 );
+
+$app->register(new Silex\Provider\DoctrineServiceProvider(), array(
+    'db.options' => $app['db.options'],
+    ));
 
 // replicate behaviour of security trait
 $app['user'] = function ($app) {

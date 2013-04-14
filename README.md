@@ -21,7 +21,8 @@ Todo
 * google analytics
 * blogging functionality
   * /login
-  * blog content type (title, )
+  * /blog content type (title, )
+  * db integration
   * list page
   * edit form
   * view page

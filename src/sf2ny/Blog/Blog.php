@@ -4,9 +4,9 @@ namespace sf2ny\Blog;
 
 class Blog
 {
-    protected $title;
-    protected $lastUpdated;
-    protected $body;
+    private $title;
+    private $lastUpdated;
+    private $body;
 
     public function __construct($title, $lastUpdated, $body)
     {
