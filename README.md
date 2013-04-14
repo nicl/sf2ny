@@ -20,7 +20,7 @@ Todo
 * /theming for homepage
 * google analytics
 * blogging functionality
-  * login
+  * /login
   * blog content type (title, )
   * list page
   * edit form
